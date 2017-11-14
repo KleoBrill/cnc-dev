@@ -23,7 +23,7 @@ gulp.task('fonts', function() {
 });
 
 gulp.task('less', function() {
-	gulp.src(['./src/css/**/**.css', './src/css/**/**.less', '!./src/css/**/main.less', '!./src/css/**/bootstrap.css'])
+	gulp.src(['./src/css/**/**.css', './src/css/**/**.less', '!./src/css/**/bootstrap.css'])
 		.pipe(less({
 			includePaths: [],
 			errLogToConsole: true,
