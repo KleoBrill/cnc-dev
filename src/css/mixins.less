@@ -1,0 +1,20 @@
+.section-with-title(@width: 20%) {
+	padding: 30px 0;
+	> h3 {
+		width: @width;
+		margin: 0;
+		padding-left: 20px;
+		line-height: 50px;
+		background: linear-gradient(to right, #0f589b, #2e8cc2);
+		color: white;
+		font-size: 32px;
+	}
+}
+
+.transition-opacity(@duration: .2s, @function: ease) {
+	transition: opacity @duration @function, visibility @duration @function;
+}
+
+.transition(@duration: .2s, @function: ease) {
+	transition: @duration @function;
+}
