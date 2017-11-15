@@ -223,24 +223,22 @@
 
 	}
 }
-@media (max-width: 480px) {
+@media (max-width: 320px) {
 	body {
-
-		
 		> .container {
-			max-width: 480px;
+			max-width: 320px;
+			padding-right: 0;
+			padding-left: 0;
 			> .banner {
 				> .banner-inner {
 					width: 100%;
 					> h1 {
-						font-size: 27px;
+						font-size: 24px;
 					}
 					> .delivery {
 						font-size: 15px;
 							> img {
-							left: 46px;
-	    					width: 31px;
-	    					display: block;
+	    					display: none;
 						}
 					}
 					
@@ -250,14 +248,22 @@
 				}
 			}
 			> .items {
+				max-width: 320px;
 				> h3 {
 					font-size: 12px;
-					width: 27%;
+					width: 47%;
 				}
 				> ul.list {
-					padding: 0 139px 0 169px;
+					//padding: 0 139px 0 169px;
+					margin: 0 auto!important;
+				    padding: 0!important;
+				    max-width: 200px!important;
 					> li.item {
-						max-width: 200px;
+						max-width: 200px!important;
+						>.button {
+							padding: 10px 23px!important;
+    						font-size: 12px!important;
+						}
 					}
 				}
 			}
@@ -275,7 +281,7 @@
 			> .brands {
 				> h3 {
 					font-size: 12px;
-					width: 55%;
+					width: 78%;
 				}
 				> ul.brands-list {
 					max-width: 200px;
@@ -292,12 +298,27 @@
 				}
 			}
 			> .location {
+				max-width: 320px;
 				> h3 {
 					font-size: 12px;
-					width: 32%;
+					width: 48%;
+				}
+			}
+		}
+	
+		footer {
+			max-width: 320px;
+			> .footer-wrap {
+				display: flex;
+	    		flex-direction: column;
+	    		margin: 0 auto;
+	    		padding-left: 24px;
+	    		> .right {
+	    			> a {
+	    				display: none;
+	    			}	
 				}
 			}
 		}
 	}
-
 }
