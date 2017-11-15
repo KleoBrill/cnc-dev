@@ -255,9 +255,10 @@
 				}
 				> ul.list {
 					//padding: 0 139px 0 169px;
+					flex-wrap: wrap;
 					margin: 0 auto!important;
 				    padding: 0!important;
-				    max-width: 200px!important;
+				    max-width: 320px!important;
 					> li.item {
 						max-width: 200px!important;
 						>.button {
@@ -279,6 +280,7 @@
 				}
 			}
 			> .brands {
+				max-width: 320px;
 				> h3 {
 					font-size: 12px;
 					width: 78%;
@@ -288,11 +290,14 @@
 					margin: 0 auto;
 
 					> li.brand {
-						&:not(:nth-of-type(5n)) {
-							margin-right: 0;
-						}
+						flex-wrap: wrap;
+
+
+						//&:not(:nth-of-type(5n)) {
+							//margin-right: 0;
+						//}
 						> img {
-							width: 130px;
+							max-width: 130px;
 						}
 					}
 				}
