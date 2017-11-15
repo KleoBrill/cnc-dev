@@ -64,6 +64,7 @@
 				}
 				> .wrap {
 					> .video {
+						display: none;
 					}
 				}
 			}
@@ -276,6 +277,9 @@
 					> li.item {
 						max-width: 320px!important;
 						display: block;
+						&:last-of-type {
+							margin-right: 30px;
+						}
 						>.button {
 							padding: 10px 23px!important;
     						font-size: 12px!important;
