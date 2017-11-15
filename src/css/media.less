@@ -249,18 +249,22 @@
 			}
 			> .items {
 				max-width: 320px;
+				overflow :hidden;
+
 				> h3 {
 					font-size: 12px;
 					width: 47%;
 				}
 				> ul.list {
 					//padding: 0 139px 0 169px;
-					flex-wrap: wrap;
+					//flex-wrap: wrap;
+					display: block;
 					margin: 0 auto!important;
 				    padding: 0!important;
 				    max-width: 320px!important;
 					> li.item {
-						max-width: 200px!important;
+						max-width: 320px!important;
+						display: block;
 						>.button {
 							padding: 10px 23px!important;
     						font-size: 12px!important;
@@ -280,24 +284,26 @@
 				}
 			}
 			> .brands {
+				overflow :hidden;
 				max-width: 320px;
 				> h3 {
 					font-size: 12px;
 					width: 78%;
 				}
 				> ul.brands-list {
-					max-width: 200px;
+					max-width: 320px;
 					margin: 0 auto;
 
 					> li.brand {
-						flex-wrap: wrap;
+						//flex-wrap: wrap;
+						display: block;
 
 
 						//&:not(:nth-of-type(5n)) {
 							//margin-right: 0;
 						//}
 						> img {
-							max-width: 130px;
+							//max-width: 130px;
 						}
 					}
 				}
