@@ -98,6 +98,55 @@ header {
 			}
 		}
 	}
+
+		
+		> nav.navbar {
+		background: transparent;
+		color: white;
+		border: 0;
+		a.navbar-brand {
+	width: 270px;
+
+		    background: url(images/logo.png) no-repeat 0 0;
+		    background-size: contain;
+		    text-decoration: none;
+		    padding-left: 55px; 
+		    font-size: 24px;
+		    color: white;
+		    &:hover {
+				color: white;
+				text-decoration: none;
+			}
+		}
+		ul.navbar-nav {
+			> li {
+				> a {
+					color: white;
+					font-size: 15px;
+					cursor: pointer;
+					opacity: .702;
+					text-decoration: none;
+					color: white;
+					&:hover {
+						opacity: 1;
+						color: white;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+		span.navbar-text {
+			display: block;
+			color: white;
+    		background-position-y: 3px;
+			> a { 
+				color: inherit;
+				padding-left: 30px;
+				text-decoration: none;
+			}
+		}
+	}
+
 }
 
 .banner {
@@ -136,6 +185,25 @@ header {
 		}
 		> .text {
 			padding: 0 35px;
+		}
+		> .button {
+			margin-top: 12px;
+			margin: 12px auto 0 auto;
+			background-image: linear-gradient(#ff6700, #ff8f09);
+		    box-shadow: rgba(169, 48, 0, .58) 0 2px 5px;
+		    border-radius: 3px;
+		    height: 54px;
+		    width: 214px;
+			border-bottom: 3px solid #a94007;
+			line-height: 50px;
+			text-align: center;
+			color: white;
+			cursor: pointer;
+			&:hover {
+				background-image: linear-gradient(#ff8a1a, #ffac3d);
+				border-color: #c34c0b;
+			}
+
 		}
 	}
 }
