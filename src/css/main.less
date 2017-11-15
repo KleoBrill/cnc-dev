@@ -10,6 +10,7 @@ body {
 .container {
 	width: 1140px;
 	margin: 0 auto;
+	padding: 0;
 	background: white;
 }
 
@@ -35,6 +36,9 @@ header {
 				cursor: pointer;
 				&:hover {
 					background: #2e8cc2;
+				}
+				&:nth-last-child(2) {
+					flex-grow: 2;
 				}
 				> a {
 					text-decoration: none;
@@ -100,40 +104,55 @@ header {
 	}
 
 		
-		> nav.navbar {
-		background: transparent;
+	> nav.navbar {
+		background: white;
 		color: white;
 		border: 0;
-		a.navbar-brand {
-	width: 270px;
-
-		    background: url(images/logo.png) no-repeat 0 0;
-		    background-size: contain;
-		    text-decoration: none;
-		    padding-left: 55px; 
-		    font-size: 24px;
-		    color: white;
-		    &:hover {
-				color: white;
-				text-decoration: none;
+		display: none;
+		margin: 0;
+		.navbar-header {
+			padding: 20px 0;
+			> button {
+				border-radius: 50%;
+				padding: 13px 10px;
+				&:hover, &:active {
+					//background: @blue;
+				}
+			}
+			a.navbar-brand {
+				width: 270px;
+			    background: url(images/logo.png) no-repeat 0 0;
+			    background-size: contain;
+			    text-decoration: none;
+			    padding-left: 55px; 
+			    font-size: 24px;
+			    color: white;
+			    &:hover {
+					color: white;
+					text-decoration: none;
+				}
 			}
 		}
-		ul.navbar-nav {
-			> li {
-				> a {
-					color: white;
-					font-size: 15px;
-					cursor: pointer;
-					opacity: .702;
-					text-decoration: none;
-					color: white;
-					&:hover {
-						opacity: 1;
+		.navbar-collapse {
+			background: @blue;
+			ul.navbar-nav {
+				> li {
+					> a {
 						color: white;
+						font-size: 15px;
+						cursor: pointer;
+						opacity: .702;
 						text-decoration: none;
+						color: white;
+						&:hover {
+							opacity: 1;
+							color: white;
+							text-decoration: none;
+						}
 					}
 				}
 			}
+
 		}
 		span.navbar-text {
 			display: block;
@@ -179,7 +198,7 @@ header {
 			> img {
 				position: absolute;
 				top: -2px;
-				left: 70px;
+				left: 30px;
 				width: 50px;
 			}
 		}
@@ -284,6 +303,7 @@ header {
 		margin: 10px 0 30px 0;
 		> li.brand {
 			flex: 1;
+			flex-basis: 200px;
 			padding: 10px 0;
 			&:not(:nth-of-type(5n)) {
 				margin-right: 10px;
@@ -306,7 +326,8 @@ header {
 	}
 }
 footer {
-
+	width: 1140px;
+	margin: 0 auto;
 	background: #0f589b;
 	> .footer-wrap {
 		width: 1140px;
